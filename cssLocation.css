@@ -1,0 +1,140 @@
+/* font importing */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+}
+.ancora{
+    text-decoration: none;
+}
+body{
+  background-image: url(imagens/imglocalizacao.jpg);
+  background-size: 100%;
+}
+
+:root {
+    --orange: #f78b00;
+    --green: #228b22;
+    --gray: #ededed;
+    --gray2: #e8e8e8e4;
+  }
+  
+  .bloco-nav {
+    position: relative; 
+    z-index: 1; 
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: white;
+    width: 100%;
+    height: 50px;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  .content {
+    width: 100%;
+    min-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  nav {
+    width: 100%;
+    height: 125px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .branding {
+    font-size: 24px;
+    color: var(--orange);
+    cursor: pointer;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  nav ul li {
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  nav ul li a {
+    color: var(--blue);
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    color: #00000083;
+  }
+  
+  nav ul button {
+    border: 1px solid var(--gray);
+    padding: 8px 40px;
+    cursor: pointer;
+    background: var(--green);
+    margin-left: 30px;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  
+  nav ul button:hover {
+    transition: background, color 0.6s;
+    background: #0f400f;;
+    color: white;
+  }
+  
+
+  .container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Estica os itens para ocupar toda a altura */
+}
+
+.descricaoLocation {
+    margin: 8em;
+    color: rgba(50, 50, 50, 0.973);
+    justify-content: center;
+    padding: 50px 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 70px 0px 70px 0px;
+    flex: 1; /* Faz com que ocupe 50% do container */
+}
+
+.background-imagem {
+    position: relative;
+    z-index: 0;
+    max-width: 100%;
+}
+
+.mapLocation {
+  margin-left: -200px;
+  margin-top: -260px;
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.mapa {
+    width: 40%;
+    height: 90%;
+}
+

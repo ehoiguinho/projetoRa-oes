@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --orange: #f78b00;
+    --green: #228b22;
+    --gray: #ededed;
+    --gray2: #e8e8e8e4;
+  }
+
+  .ancora{
+    text-decoration: none;
+  }
+
+  body {
+    min-height: 100vh;
+    /* display: grid; Remova ou ajuste essa linha */
+    place-items: initial; /* Adicione ou ajuste essa linha */
+    padding: 1rem;
+    background: var(--gray2);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+
+  form {
+    width: 100%;
+    max-width: 30rem;
+    margin: 5rem auto 0; /* Adiciona margens automáticas para centralizar o formulário */
+  }
+
+label,
+input,
+textarea,
+button {
+  display: block;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  font: inherit;
+  padding: 1.25rem;
+  font-weight: 700;
+}
+
+input,
+textarea {
+  margin-bottom: 1rem;
+  color: rgb(29, 29, 29);
+  background: #ffffff;
+  border: 0.125rem solid transparent;
+  border-radius: 1.125rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+  outline: none;
+  border-color: #e8e8e8e4;
+  box-shadow: 0 0 0 0.3125rem #228b22;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  color: #43464d;
+}
+
+textarea {
+  min-height: 6.5rem;
+  resize: vertical;
+}
+
+button {
+  border: none;
+  border-radius: 99px;
+  color: white;
+  background: #228b22;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover,
+button:focus {
+  outline: none;
+  background: #0f400f;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background: #555b69;
+}
+
+
+/*estilizaçao do nav */
+
+.bloco-nav {
+  position: relative; /* Adicionado para posicionar elementos filhos relativamente */
+  z-index: 1; /* Adicionado para garantir que o bloco-nav esteja acima da imagem */
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: white;
+  width: 100%;
+  height: 50px;
+}
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  .content {
+    width: 100%;
+    min-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  nav {
+    width: 100%;
+    height: 125px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .branding {
+    font-size: 24px;
+    color: var(--orange);
+    cursor: pointer;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  nav ul li {
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  nav ul li a {
+    color: var(--blue);
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    color: #00000083;
+  }
+  
+  nav ul button {
+    border: 1px solid var(--gray);
+    padding: 8px 40px;
+    cursor: pointer;
+    background: var(--green);
+    margin-left: 30px;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  
+  nav ul button:hover {
+    transition: background, color 0.6s;
+    background: #0f400f;;
+    color: white;
+  }
+
+  .opcontatos {
+    margin-bottom: 3em;
+    padding: 10px;
+    font-size: 19px;
+    text-align: center;
+    color: #43464d;
+  }
+  
+  .opcontatos h1 {
+    white-space: nowrap; /* Evita a quebra de linha */
+  }
+
+  .opcontatos2 {
+    font-size: 15px;
+    background-color: white;
+    width: 40%;
+    height: 70%;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5rem auto 0;
+    text-align: center;
+    justify-content: center;
+
+  }
+
+/* estilizacao footer */
+
+footer{
+  width: 100%;
+  height: 250px;
+
+}
+
+footer .main{
+  width: 100%;
+  height: 230px;
+  background: var(--green);
+  padding: 20px 10px;
+
+}
+
+.footer-links{
+  max-width: 1000px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.footer-company,
+.footer-rental,
+.footer-contact,
+.footer-social{
+  font-size: 1.2em;
+  color: white;
+  height: 100%;
+  min-height: 100px;
+}
+
+.footer-links h4{
+  margin-bottom: 10px;
+}
+
+.footer-links{
+  margin-bottom: 8px;
+}
+
+.main .footer-social img{
+  width: 32px;
+  height: 32px;
+
+}
