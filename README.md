@@ -1,2 +1,2 @@
 # projetoRacoes
-desenvolver um site comercial para venda de raçoes para gado
+desenvolver um site comercial para a comercializaçao de raçoes de bovinos e suinos 
