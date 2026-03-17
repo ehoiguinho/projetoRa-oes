@@ -15,6 +15,7 @@
   font-family: "Roboto", sans-serif;
 }
 
+
 :root {
   --orange: #f78b00;
   --green: #228b22;
@@ -220,7 +221,7 @@ section .cartao-item{
 }
 
 .cartao-item:hover {
-  transform: scale(0.9); /* Aumenta a escala da imagem em 10% ao passar o mouse */
+  transform: scale(1.02); /* Aumenta a escala da imagem em 10% ao passar o mouse */
 }
 
 .card-content{
