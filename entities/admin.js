@@ -40,6 +40,16 @@ export default class adminEntity{
     }
     set senha(values){
         this.#senha = values;
+    }   
+
+
+    
+    validar() {
+        if(this.#nome != null && this.#email != null && this.#email.includes("@")) {
+            return true;
+        }
+
+        return false;
     }
 
 

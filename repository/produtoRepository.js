@@ -1,7 +1,7 @@
 import Database from "../db/database";
 
 
-export default class AdminRepository{
+export default class ProdutoRepository{
 
     #banco;
 
@@ -12,8 +12,8 @@ export default class AdminRepository{
 
     async gravar(entidade){
 
-        let sql = "insert into tb_admin (ad_nome, ad_email, ad_senha) values (?, ?, ?)";
-        let valores = [entidade.nome, entidade.email, entidade.senha];
+        let sql = "insert into tb_produto (p_nome, p_descricao, p_imagem) values (?, ?, ?)";
+        let entidade = [entidade.nome, entidade.descricao, entidade.imagem];
 
         let result = await this.#banco.ExecutaComandoLastInserted(sql, valores);
 
