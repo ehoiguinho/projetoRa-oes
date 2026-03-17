@@ -20,4 +20,21 @@ export default class ProdutoRepository{
         return result;
 
     }
+
+    async alterar(entidadeAtualizada){
+        let sql = "update tb_produto set p_nome = ?, p_descricao, p_imagem where p_id = ?";
+        let valores = [entidadeAtualizada.nome, entidadeAtualizada.descricao, entidadeAtualizada.imagem, entidadeAtualizada.id];
+
+        let result = await this.#banco.ExecutaComandoNonQuery(sql, valores);
+
+        return result;
+    }
+
+    async deletar(id){
+        let sql = "delete from tb_produto where p_id = ?";
+        let  valores = [id];
+        let result = await this.#banco.ExecutaComandoNonQuery(sql, valores);
+
+        return result;
+    }
 }
