@@ -1,5 +1,9 @@
 {
+  "type": "module",
   "dependencies": {
-    "swagger": "^0.7.5"
+    "express": "^5.2.1",
+    "swagger": "^0.7.5",
+    "swagger-autogen": "^2.23.7",
+    "swagger-ui-express": "^5.0.1"
   }
 }
