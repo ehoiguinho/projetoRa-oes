@@ -1,5 +1,5 @@
-import adminEntity from "../entities/admin";
-import AdminRepository from "../repository/adminRepository";
+import adminEntity from "../entities/admin.js";
+import AdminRepository from "../repository/adminRepository.js";
 
 
 export default class AdminController{
@@ -12,7 +12,7 @@ export default class AdminController{
     async cadastrar(req, res){
 
         try{
-        let {id, nome, email, senha} = req.body;
+        let {nome, email, senha} = req.body;
         let entidade = new adminEntity(0, nome, email, senha);
         if(entidade.validar()){
             let result = await this.#repo.gravar(entidade);
